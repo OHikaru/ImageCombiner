@@ -40,7 +40,7 @@ def combine_images(images, direction='horizontal'):
 
 st.title("画像結合アプリ")
 
-uploaded_files = st.file_uploader("画像をアップロードしてください", type=["jpg", "jpeg", "png"], accept_multiple_files=True)
+uploaded_files = st.file_uploader("画像をアップロードしてください", type=["jpg", "jpeg", "png", "pdf", "tiff", "bmp", "webp"], accept_multiple_files=True)
 
 if uploaded_files:
     images = [Image.open(file) for file in uploaded_files]
