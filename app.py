@@ -47,7 +47,7 @@ if uploaded_files:
     
     direction = st.radio(
         "結合方向を選択してください",
-        ('水平', '垂直')
+        ('垂直','水平')
     )
     
     if st.button("画像を結合"):
